@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms and Conditions — RemoteNow</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --surface: #13161b;
+      --border: #1e2229;
+      --accent: #3ecfcf;
+      --accent-dim: rgba(62,207,207,0.12);
+      --accent-orange: #f0a050;
+      --accent-orange-dim: rgba(240,160,80,0.08);
+      --text: #e2e6ec;
+      --muted: #636b78;
+      --heading: #ffffff;
+      --tag-bg: #1a1f27;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .top-bar {
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent-orange), transparent);
+    }
+
+    header {
+      position: relative;
+      padding: 64px 0 48px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .logo-icon {
+      width: 38px; height: 38px;
+      border: 1.5px solid var(--accent);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent);
+      font-size: 18px;
+    }
+
+    .logo-name {
+      font-family: 'DM Mono', monospace;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: var(--heading);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.05em;
+    }
+
+    .wrapper {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative; z-index: 1;
+    }
+
+    .intro-box {
+      margin: 48px 0 40px;
+      padding: 22px 28px;
+      background: var(--accent-orange-dim);
+      border: 1px solid rgba(240,160,80,0.2);
+      border-left: 3px solid var(--accent-orange);
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .toc {
+      margin: 0 0 56px;
+      padding: 28px 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .toc-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .toc ol {
+      list-style: none;
+      counter-reset: toc;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 32px;
+    }
+
+    @media (max-width: 540px) { .toc ol { grid-template-columns: 1fr; } }
+
+    .toc li { counter-increment: toc; }
+
+    .toc a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 13.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+
+    .toc a::before {
+      content: counter(toc, decimal-leading-zero);
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      min-width: 22px;
+    }
+
+    .toc a:hover { color: var(--accent); }
+
+    section {
+      margin-bottom: 64px;
+      scroll-margin-top: 32px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-num {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--accent-orange);
+      background: var(--accent-orange-dim);
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.05em;
+      border: 1px solid rgba(240,160,80,0.2);
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      color: var(--heading);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-size: 12px;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 28px 0 12px;
+    }
+
+    p { margin-bottom: 14px; color: var(--text); }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    strong { color: var(--heading); font-weight: 500; }
+
+    .callout {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin: 18px 0;
+      font-size: 14px;
+    }
+
+    .callout.warn {
+      border-left-color: var(--accent-orange);
+      background: var(--accent-orange-dim);
+    }
+
+    .callout.legal {
+      border-left-color: #7b8cde;
+      background: rgba(123,140,222,0.06);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .table-wrap { overflow-x: auto; margin: 16px 0 24px; border-radius: 10px; border: 1px solid var(--border); }
+
+    table { width: 100%; border-collapse: collapse; }
+
+    thead tr { background: var(--surface); }
+
+    th {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      padding: 12px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 13px 20px;
+      font-size: 13.5px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: rgba(255,255,255,0.02); }
+    td a { color: var(--accent); text-decoration: none; }
+    td a:hover { text-decoration: underline; }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0 20px;
+    }
+
+    .pill {
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .uppercase-block {
+      font-size: 12.5px;
+      line-height: 1.9;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px 26px;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.01em;
+      margin: 16px 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 0 48px;
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      color: var(--heading);
+      margin-bottom: 6px;
+    }
+
+    .footer-sub {
+      font-size: 12px;
+      color: var(--muted);
+      font-family: 'DM Mono', monospace;
+      margin-bottom: 20px;
+    }
+
+    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0;
+    }
+
+    .nav-bar a {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 5px;
+      transition: all 0.2s;
+    }
+
+    .nav-bar a:hover { color: var(--accent); background: var(--accent-dim); }
+    .nav-bar a.active { color: var(--accent-orange); }
+  </style>
+</head>
+<body>
+
+<div class="top-bar"></div>
+
+<div class="wrapper">
+  <header>
+    <div class="logo-mark">
+      <div class="logo-icon">⟳</div>
+      <span class="logo-name">RemoteNow</span>
+    </div>
+    <h1>Terms &amp; Conditions</h1>
+    <p class="subtitle">Last Updated: May 16, 2026</p>
+  </header>
+
+  <nav class="nav-bar" aria-label="Site navigation">
+    <a href="index.html">Privacy Policy</a>
+    <a href="terms.html" class="active">Terms &amp; Conditions</a>
+  </nav>
+
+  <div class="intro-box">
+    Please read these Terms and Conditions carefully before using <strong>RemoteNow</strong>. By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use the App.
+  </div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p class="toc-label">Contents</p>
+    <ol>
+      <li><a href="#s1">Acceptance of Terms</a></li>
+      <li><a href="#s2">Description of Service</a></li>
+      <li><a href="#s3">License Grant</a></li>
+      <li><a href="#s4">User Responsibilities</a></li>
+      <li><a href="#s5">Intellectual Property</a></li>
+      <li><a href="#s6">Privacy</a></li>
+      <li><a href="#s7">Third-Party Services</a></li>
+      <li><a href="#s8">Network &amp; Compatibility</a></li>
+      <li><a href="#s9">Disclaimer of Warranties</a></li>
+      <li><a href="#s10">Limitation of Liability</a></li>
+      <li><a href="#s11">Indemnification</a></li>
+      <li><a href="#s12">Termination</a></li>
+      <li><a href="#s13">Changes to Terms</a></li>
+      <li><a href="#s14">Governing Law</a></li>
+      <li><a href="#s15">Severability</a></li>
+      <li><a href="#s16">Entire Agreement</a></li>
+      <li><a href="#s17">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1 -->
+  <section id="s1">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>Acceptance of Terms</h2>
+    </div>
+    <p>By accessing or using RemoteNow, you confirm that:</p>
+    <ol>
+      <li>You are at least <strong>13 years of age</strong> (or the minimum age of digital consent in your country).</li>
+      <li>You have the legal capacity to enter into a binding agreement.</li>
+      <li>You agree to comply with these Terms and all applicable laws and regulations.</li>
+    </ol>
+  </section>
+
+  <!-- 2 -->
+  <section id="s2">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Description of Service</h2>
+    </div>
+    <p>RemoteNow is a Smart TV remote control application that allows you to:</p>
+    <ul>
+      <li>Discover and connect to compatible Smart TVs and streaming devices on your local Wi-Fi network.</li>
+      <li>Control your TV using a virtual remote, including navigation, playback, and power controls.</li>
+      <li>Cast media (photos, videos, and audio) from your mobile device to your TV.</li>
+      <li>Use voice commands to control your TV.</li>
+    </ul>
+    <div class="callout warn">
+      <strong>Important:</strong> RemoteNow functions exclusively over your <strong>local Wi-Fi network</strong>. The App requires both your mobile device and your TV to be connected to the same Wi-Fi network.
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="s3">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>License Grant</h2>
+    </div>
+    <p>Subject to these Terms, we grant you a <strong>limited, non-exclusive, non-transferable, revocable license</strong> to:</p>
+    <ul>
+      <li>Download and install the App on devices you own or control.</li>
+      <li>Use the App for personal, non-commercial purposes.</li>
+    </ul>
+    <p>This license does <strong>not</strong> include the right to:</p>
+    <div class="pill-row">
+      <span class="pill">Copy or distribute</span>
+      <span class="pill">Reverse engineer</span>
+      <span class="pill">Decompile or disassemble</span>
+      <span class="pill">Commercial use</span>
+      <span class="pill">Remove proprietary notices</span>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section id="s4">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>User Responsibilities</h2>
+    </div>
+    <p>You agree to use RemoteNow responsibly and lawfully. You shall <strong>not</strong>:</p>
+    <ul>
+      <li>Use the App to control devices you do not own or do not have permission to operate.</li>
+      <li>Attempt to gain unauthorized access to any network, device, or system.</li>
+      <li>Use the App to transmit any malicious code, viruses, or harmful content.</li>
+      <li>Circumvent, disable, or interfere with security-related features of the App.</li>
+      <li>Use the App in any manner that could damage, disable, overburden, or impair our services.</li>
+      <li>Violate any applicable local, state, national, or international law or regulation.</li>
+    </ul>
+  </section>
+
+  <!-- 5 -->
+  <section id="s5">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>Intellectual Property</h2>
+    </div>
+    <p>All content, features, and functionality of the App — including but not limited to design, text, graphics, logos, icons, and source code — are the exclusive property of RemoteNow and are protected by applicable intellectual property laws.</p>
+    <p>The "RemoteNow" name, logo, and all related marks are trademarks of the RemoteNow team. You may not use these marks without our prior written permission.</p>
+    <div class="callout">
+      Third-party brand names, logos, and device names (e.g., Samsung, LG, Sony, Roku, Amazon) referenced in the App are the property of their respective owners. RemoteNow is an independent application and is <strong>not affiliated with, endorsed by, or sponsored by</strong> any TV manufacturer.
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section id="s6">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2>Privacy</h2>
+    </div>
+    <p>Your use of the App is also governed by our <strong>Privacy Policy</strong>, which is incorporated into these Terms by reference. Please review our <a href="index.html" style="color:var(--accent)">Privacy Policy</a> to understand our practices.</p>
+  </section>
+
+  <!-- 7 -->
+  <section id="s7">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <h2>Third-Party Services</h2>
+    </div>
+    <p>The App may integrate or interact with third-party services, including:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Service</th><th>Purpose</th><th>Policy</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Firebase (Google)</strong></td><td>Analytics and crash reporting</td><td><a href="https://policies.google.com/privacy">View</a></td></tr>
+          <tr><td><strong>Samsung SmartThings</strong></td><td>TV device communication</td><td><a href="https://www.samsung.com/global/privacy/privacy-policy/">View</a></td></tr>
+          <tr><td><strong>LG webOS</strong></td><td>TV device communication</td><td><a href="https://www.lg.com/global/privacy">View</a></td></tr>
+          <tr><td><strong>Roku ECP</strong></td><td>TV device communication</td><td><a href="https://www.roku.com/en-us/legal/privacy-policy">View</a></td></tr>
+          <tr><td><strong>Amazon Fling</strong></td><td>TV device communication</td><td><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=201909010">View</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>We are not responsible for the practices of any third-party services.</p>
+  </section>
+
+  <!-- 8 -->
+  <section id="s8">
+    <div class="section-header">
+      <span class="section-num">08</span>
+      <h2>Network &amp; Device Compatibility</h2>
+    </div>
+    <p>RemoteNow relies on network protocols and manufacturer APIs that may change without notice. We do not guarantee:</p>
+    <ul>
+      <li>Compatibility with all TV models or firmware versions.</li>
+      <li>Uninterrupted connection to any specific TV or device.</li>
+      <li>That all advertised features will be available for every supported device.</li>
+    </ul>
+    <div class="callout warn">Compatibility depends on your TV's firmware, network configuration, and manufacturer APIs. Feature availability may vary by device brand and model.</div>
+  </section>
+
+  <!-- 9 -->
+  <section id="s9">
+    <div class="section-header">
+      <span class="section-num">09</span>
+      <h2>Disclaimer of Warranties</h2>
+    </div>
+    <div class="uppercase-block">
+      THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:<br/><br/>
+      — IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.<br/>
+      — WARRANTIES THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.<br/>
+      — WARRANTIES REGARDING THE ACCURACY OR RELIABILITY OF ANY INFORMATION OBTAINED THROUGH THE APP.
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section id="s10">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <h2>Limitation of Liability</h2>
+    </div>
+    <div class="uppercase-block">
+      TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL REMOTENOW, ITS OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.<br/><br/>
+      OUR TOTAL LIABILITY FOR ANY CLAIM IS LIMITED TO THE AMOUNT YOU PAID FOR THE APP IN THE PAST SIX (6) MONTHS, OR $1.00 USD, WHICHEVER IS GREATER.
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section id="s11">
+    <div class="section-header">
+      <span class="section-num">11</span>
+      <h2>Indemnification</h2>
+    </div>
+    <p>You agree to defend, indemnify, and hold harmless RemoteNow and its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to:</p>
+    <ul>
+      <li>Your violation of these Terms.</li>
+      <li>Your use of the App.</li>
+      <li>Your violation of any third-party right, including intellectual property rights.</li>
+    </ul>
+  </section>
+
+  <!-- 12 -->
+  <section id="s12">
+    <div class="section-header">
+      <span class="section-num">12</span>
+      <h2>Termination</h2>
+    </div>
+    <p>We reserve the right to terminate or suspend your access to the App at our sole discretion, without notice, for conduct that we believe violates these Terms, is harmful to other users or third parties, or violates applicable law.</p>
+    <div class="callout">Upon termination, your right to use the App will immediately cease. All provisions of these Terms which by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</div>
+  </section>
+
+  <!-- 13 -->
+  <section id="s13">
+    <div class="section-header">
+      <span class="section-num">13</span>
+      <h2>Changes to Terms</h2>
+    </div>
+    <p>We reserve the right to modify these Terms at any time. We will indicate changes by updating the "Last Updated" date at the top of this document. Your continued use of the App after any changes constitutes your acceptance of the new Terms. If you do not agree to the modified Terms, you must stop using the App.</p>
+  </section>
+
+  <!-- 14 -->
+  <section id="s14">
+    <div class="section-header">
+      <span class="section-num">14</span>
+      <h2>Governing Law</h2>
+    </div>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which the developer operates, without regard to its conflict of law provisions. Any disputes arising under or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts in that jurisdiction.</p>
+  </section>
+
+  <!-- 15 -->
+  <section id="s15">
+    <div class="section-header">
+      <span class="section-num">15</span>
+      <h2>Severability</h2>
+    </div>
+    <p>If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions will continue in full force and effect. The invalid or unenforceable provision will be modified to the minimum extent necessary to make it valid and enforceable.</p>
+  </section>
+
+  <!-- 16 -->
+  <section id="s16">
+    <div class="section-header">
+      <span class="section-num">16</span>
+      <h2>Entire Agreement</h2>
+    </div>
+    <p>These Terms, together with the <a href="index.html" style="color:var(--accent)">Privacy Policy</a>, constitute the entire agreement between you and RemoteNow regarding your use of the App and supersede all prior agreements and understandings, whether written or oral.</p>
+  </section>
+
+  <!-- 17 -->
+  <section id="s17">
+    <div class="section-header">
+      <span class="section-num">17</span>
+      <h2>Contact Us</h2>
+    </div>
+    <p>If you have any questions about these Terms and Conditions, please contact us at:</p>
+    <div class="callout">
+      <strong>Email:</strong> <a href="mailto:support@remotenow.app" style="color:var(--accent)">support@remotenow.app</a><br/>
+      <strong>Website:</strong> <a href="https://github.com/your-org/remotenow" style="color:var(--accent)">github.com/your-org/remotenow</a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-brand">RemoteNow</p>
+    <p class="footer-sub">Smart TV Remote Controller · Terms &amp; Conditions · v1.0</p>
+    <div class="footer-links">
+      <a href="index.html">Privacy Policy</a>
+      <a href="mailto:support@remotenow.app">Contact</a>
+      <a href="https://github.com/your-org/remotenow">GitHub</a>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

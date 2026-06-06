@@ -241,8 +241,6 @@ If you have any questions regarding these Terms and Conditions, please contact u
 
 **Email:** [support@remotiq.app](mailto:support@remotiq.app)
 
-**Website:** https://remotiq.app
-
 ---
 
 **Remotiq — Smart TV Remote Controller**

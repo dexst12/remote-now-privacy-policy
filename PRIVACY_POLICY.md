@@ -146,8 +146,6 @@ If you have any questions about this Privacy Policy or our privacy practices, pl
 
 **Email:** [support@remotiq.app](mailto:support@remotiq.app)
 
-**Website:** https://remotiq.app
-
 ---
 
 **Remotiq — Smart TV Remote Controller**

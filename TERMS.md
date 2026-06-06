@@ -1,40 +1,40 @@
-# Terms and Conditions — RemoteNow
+# Terms and Conditions — Remotiq
 
-**Last Updated: May 16, 2026**
+**Last Updated: June 6, 2026**
 
-Please read these Terms and Conditions ("Terms") carefully before using **RemoteNow** (the "App") operated by the RemoteNow team ("we", "us", or "our").
+Please read these Terms and Conditions ("Terms") carefully before using **Remotiq** (the "App") operated by the Remotiq team ("we", "us", or "our").
 
 By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use the App.
 
 ---
 
-## Table of Contents
+# Table of Contents
 
-1. [Acceptance of Terms](#1-acceptance-of-terms)
-2. [Description of Service](#2-description-of-service)
-3. [License Grant](#3-license-grant)
-4. [User Responsibilities](#4-user-responsibilities)
-5. [Intellectual Property](#5-intellectual-property)
-6. [Privacy](#6-privacy)
-7. [Third-Party Services](#7-third-party-services)
-8. [Network and Device Compatibility](#8-network-and-device-compatibility)
-9. [Disclaimer of Warranties](#9-disclaimer-of-warranties)
-10. [Limitation of Liability](#10-limitation-of-liability)
-11. [Indemnification](#11-indemnification)
-12. [Termination](#12-termination)
-13. [Changes to Terms](#13-changes-to-terms)
-14. [Governing Law](#14-governing-law)
-15. [Severability](#15-severability)
-16. [Entire Agreement](#16-entire-agreement)
-17. [Contact Us](#17-contact-us)
+1. Acceptance of Terms
+2. Description of Service
+3. License Grant
+4. User Responsibilities
+5. Intellectual Property
+6. Privacy
+7. Third-Party Services
+8. Network and Device Compatibility
+9. Disclaimer of Warranties
+10. Limitation of Liability
+11. Indemnification
+12. Termination
+13. Changes to Terms
+14. Governing Law
+15. Severability
+16. Entire Agreement
+17. Contact Us
 
 ---
 
 ## 1. Acceptance of Terms
 
-By accessing or using RemoteNow, you confirm that:
+By accessing or using Remotiq, you confirm that:
 
-1. You are at least **13 years of age** (or the minimum age of digital consent in your country).
+1. You are at least thirteen (13) years old or the minimum age required by applicable law in your jurisdiction.
 2. You have the legal capacity to enter into a binding agreement.
 3. You agree to comply with these Terms and all applicable laws and regulations.
 
@@ -42,170 +42,207 @@ By accessing or using RemoteNow, you confirm that:
 
 ## 2. Description of Service
 
-RemoteNow is a Smart TV remote control application that allows you to:
+Remotiq is a Smart TV remote control application that enables users to:
 
-- Discover and connect to compatible Smart TVs and streaming devices on your local Wi-Fi network.
-- Control your TV using a virtual remote, including navigation, playback, and power controls.
-- Cast media (photos, videos, and audio) from your mobile device to your TV.
-- Use voice commands to control your TV.
+* Discover and connect to compatible Smart TVs and streaming devices on a local Wi-Fi network.
+* Control supported devices using virtual remote controls.
+* Cast photos, videos, and audio from a mobile device to a compatible TV or streaming device.
+* Use voice commands and other supported control methods.
+* Manage and reconnect previously paired devices.
 
-> **Important:** RemoteNow functions exclusively over your **local Wi-Fi network**. The App requires both your mobile device and your TV to be connected to the same Wi-Fi network.
+**Important:** Remotiq operates primarily through your local Wi-Fi network. For most features to work correctly, both your mobile device and the target TV or streaming device must be connected to the same network.
 
 ---
 
 ## 3. License Grant
 
-Subject to these Terms, we grant you a **limited, non-exclusive, non-transferable, revocable license** to:
+Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to:
 
-- Download and install the App on devices you own or control.
-- Use the App for personal, non-commercial purposes.
+* Download, install, and use the App on devices you own or control.
+* Use the App for personal, lawful, and non-commercial purposes.
 
-This license does **not** include the right to:
+You may not:
 
-- Copy, modify, or distribute the App.
-- Reverse engineer, decompile, or disassemble the App.
-- Use the App for any commercial purpose without our prior written consent.
-- Remove or alter any proprietary notices or labels on the App.
+* Copy, reproduce, distribute, sublicense, lease, rent, or sell the App.
+* Modify, adapt, or create derivative works of the App.
+* Reverse engineer, decompile, disassemble, or attempt to extract source code except where permitted by applicable law.
+* Remove, obscure, or alter proprietary notices contained in the App.
+* Use the App in a manner that violates applicable law or third-party rights.
 
 ---
 
 ## 4. User Responsibilities
 
-You agree to use RemoteNow responsibly and lawfully. You shall **not**:
+You agree to use Remotiq responsibly and only for lawful purposes.
 
-- Use the App to control devices you do not own or do not have permission to operate.
-- Attempt to gain unauthorized access to any network, device, or system.
-- Use the App to transmit any malicious code, viruses, or harmful content.
-- Circumvent, disable, or interfere with security-related features of the App.
-- Use the App in any manner that could damage, disable, overburden, or impair our services.
-- Violate any applicable local, state, national, or international law or regulation.
+You must not:
+
+* Attempt to access or control devices without authorization.
+* Use the App to interfere with networks, systems, or devices.
+* Upload, transmit, or distribute malicious code, malware, or harmful content.
+* Circumvent security features or restrictions of the App or connected devices.
+* Use the App in a way that may damage, disable, or impair connected devices or services.
+* Violate any applicable laws, regulations, or third-party rights.
+
+You are solely responsible for obtaining permission to control any device using the App.
 
 ---
 
 ## 5. Intellectual Property
 
-All content, features, and functionality of the App — including but not limited to design, text, graphics, logos, icons, and source code — are the exclusive property of RemoteNow and are protected by applicable intellectual property laws.
+The App and all related content, features, functionality, trademarks, logos, graphics, software, and documentation are owned by or licensed to the Remotiq team and are protected by applicable intellectual property laws.
 
-The "RemoteNow" name, logo, and all related marks are trademarks of the RemoteNow team. You may not use these marks without our prior written permission.
+The name "Remotiq", associated logos, and branding elements may not be used without prior written permission.
 
-Third-party brand names, logos, and device names (e.g., Samsung, LG, Sony, Roku, Amazon) referenced in the App are the property of their respective owners. RemoteNow is an independent application and is **not affiliated with, endorsed by, or sponsored by** any TV manufacturer.
+References to third-party products, services, manufacturers, or trademarks, including Samsung, LG, Sony, Roku, Amazon, Apple, Philips, Hisense, Panasonic, and others, are used solely for compatibility and identification purposes.
+
+Remotiq is an independent application and is not affiliated with, endorsed by, sponsored by, or officially associated with any television manufacturer, streaming device manufacturer, or platform provider.
 
 ---
 
 ## 6. Privacy
 
-Your use of the App is also governed by our **[Privacy Policy](PRIVACY.md)**, which is incorporated into these Terms by reference. Please review our Privacy Policy to understand our practices.
+Your use of the App is also governed by our Privacy Policy, which is incorporated into these Terms by reference.
+
+By using Remotiq, you acknowledge that you have reviewed and understood the Privacy Policy.
 
 ---
 
 ## 7. Third-Party Services
 
-The App may integrate or interact with third-party services, including:
+The App may utilize or interact with third-party services, software development kits (SDKs), APIs, or manufacturer protocols, including but not limited to:
 
-| Service | Purpose | Privacy Policy |
-|---|---|---|
-| **Firebase (Google)** | Analytics and crash reporting | [View](https://policies.google.com/privacy) |
-| **Samsung SmartThings** | TV device communication | [View](https://www.samsung.com/global/privacy/privacy-policy/) |
-| **LG webOS** | TV device communication | [View](https://www.lg.com/global/privacy) |
-| **Roku ECP** | TV device communication | [View](https://www.roku.com/en-us/legal/privacy-policy) |
-| **Amazon Fling** | TV device communication | [View](https://www.amazon.com/gp/help/customer/display.html?nodeId=201909010) |
+* Firebase Analytics
+* Firebase Crashlytics
+* Samsung SmartThings APIs
+* LG webOS APIs
+* Roku External Control Protocol (ECP)
+* Amazon Fire TV communication protocols
+* Apple TV communication protocols
 
-We are not responsible for the practices of any third-party services.
+Third-party services are governed by their own terms, conditions, and privacy policies. We are not responsible for the availability, content, or practices of any third-party service.
 
 ---
 
 ## 8. Network and Device Compatibility
 
-RemoteNow relies on network protocols and manufacturer APIs that may change without notice. We do not guarantee:
+Remotiq relies on manufacturer-provided protocols, APIs, firmware capabilities, and local network connectivity.
 
-- Compatibility with all TV models or firmware versions.
-- Uninterrupted connection to any specific TV or device.
-- That all advertised features will be available for every supported device.
+We do not guarantee:
 
-> Compatibility depends on your TV's firmware, network configuration, and manufacturer APIs. Feature availability may vary by device brand and model.
+* Compatibility with every TV, streaming device, firmware version, or operating system.
+* Continuous availability of any specific feature.
+* Successful pairing or communication with all supported devices.
+* Uninterrupted or error-free operation.
+
+Compatibility may change as manufacturers update or discontinue products, protocols, APIs, or firmware.
 
 ---
 
 ## 9. Disclaimer of Warranties
 
-THE APP IS PROVIDED ON AN **"AS IS"** AND **"AS AVAILABLE"** BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS.
 
-- Implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
-- Warranties that the App will be uninterrupted, error-free, or free of viruses or other harmful components.
-- Warranties regarding the accuracy or reliability of any information obtained through the App.
+WE DISCLAIM ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO:
 
-We do not warrant that defects will be corrected or that the App or the server that makes it available are free of viruses or other harmful components.
+* MERCHANTABILITY
+* FITNESS FOR A PARTICULAR PURPOSE
+* NON-INFRINGEMENT
+* ACCURACY
+* RELIABILITY
+* AVAILABILITY
+
+WE DO NOT WARRANT THAT:
+
+* THE APP WILL OPERATE WITHOUT INTERRUPTION OR ERROR.
+* DEFECTS WILL BE CORRECTED.
+* THE APP WILL BE COMPATIBLE WITH ALL DEVICES.
+* THE APP WILL BE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
 
 ---
 
 ## 10. Limitation of Liability
 
-TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL REMOTENOW, ITS OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY:
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, REMOTIQ AND ITS OWNERS, DEVELOPERS, AFFILIATES, CONTRACTORS, EMPLOYEES, AND REPRESENTATIVES SHALL NOT BE LIABLE FOR:
 
-- **Indirect**, incidental, special, consequential, or punitive damages.
-- Loss of profits, data, use, goodwill, or other intangible losses.
-- Damages resulting from unauthorized access to or alteration of your transmissions or data.
-- Damages resulting from any third-party conduct on the App.
+* INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES.
+* LOSS OF PROFITS, REVENUE, BUSINESS OPPORTUNITIES, DATA, OR GOODWILL.
+* INTERRUPTION OF BUSINESS OR DEVICE FUNCTIONALITY.
+* DAMAGES RESULTING FROM DEVICE MISCONFIGURATION, NETWORK FAILURE, OR THIRD-PARTY SERVICES.
+* DAMAGES ARISING FROM UNAUTHORIZED DEVICE ACCESS OR USER MISUSE.
 
-OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THESE TERMS OR THE APP, REGARDLESS OF THE FORM OF THE ACTION, IS LIMITED TO THE AMOUNT YOU PAID FOR THE APP IN THE PAST SIX (6) MONTHS, OR $1.00 USD, WHICHEVER IS GREATER.
+IN NO EVENT SHALL OUR TOTAL LIABILITY EXCEED THE GREATER OF:
+
+* THE AMOUNT PAID BY YOU FOR THE APP DURING THE PRECEDING SIX (6) MONTHS; OR
+* ONE UNITED STATES DOLLAR (USD $1.00).
 
 ---
 
 ## 11. Indemnification
 
-You agree to defend, indemnify, and hold harmless RemoteNow and its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to:
+You agree to defend, indemnify, and hold harmless Remotiq, its owners, affiliates, contractors, employees, and representatives from and against any claims, damages, liabilities, losses, costs, and expenses (including reasonable legal fees) arising from:
 
-- Your violation of these Terms.
-- Your use of the App.
-- Your violation of any third-party right, including intellectual property rights.
+* Your use of the App.
+* Your violation of these Terms.
+* Your violation of applicable law.
+* Your infringement of any third-party rights.
 
 ---
 
 ## 12. Termination
 
-We reserve the right to terminate or suspend your access to the App at our sole discretion, without notice, for conduct that we believe:
+We may suspend, restrict, or terminate access to the App at any time if:
 
-- Violates these Terms.
-- Is harmful to other users, us, or third parties.
-- Violates applicable law.
+* You violate these Terms.
+* Your use creates legal, security, or operational risks.
+* We discontinue the App or related services.
 
-Upon termination, your right to use the App will immediately cease. All provisions of these Terms which by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+Upon termination, all rights granted under these Terms immediately cease.
+
+Sections relating to intellectual property, disclaimers, limitation of liability, indemnification, governing law, and dispute resolution shall survive termination.
 
 ---
 
 ## 13. Changes to Terms
 
-We reserve the right to modify these Terms at any time. We will indicate changes by updating the "Last Updated" date at the top of this document. Your continued use of the App after any changes constitutes your acceptance of the new Terms.
+We may revise these Terms from time to time.
 
-We encourage you to review these Terms periodically. If you do not agree to the modified Terms, you must stop using the App.
+Updated versions will be indicated by revising the "Last Updated" date at the top of this document.
+
+Your continued use of the App after changes become effective constitutes acceptance of the revised Terms.
 
 ---
 
 ## 14. Governing Law
 
-These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which the developer operates, without regard to its conflict of law provisions. Any disputes arising under or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts in that jurisdiction.
+These Terms shall be governed by and construed in accordance with the laws applicable in the jurisdiction where the developer operates, without regard to conflict-of-law principles.
+
+Any disputes arising from these Terms or the App shall be subject to the exclusive jurisdiction of the competent courts in that jurisdiction, unless otherwise required by applicable consumer protection laws.
 
 ---
 
 ## 15. Severability
 
-If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions will continue in full force and effect. The invalid or unenforceable provision will be modified to the minimum extent necessary to make it valid and enforceable.
+If any provision of these Terms is found to be invalid, unlawful, or unenforceable, the remaining provisions shall remain in full force and effect.
+
+Any invalid provision shall be interpreted to achieve its intended purpose to the greatest extent permitted by law.
 
 ---
 
 ## 16. Entire Agreement
 
-These Terms, together with the [Privacy Policy](PRIVACY.md), constitute the entire agreement between you and RemoteNow regarding your use of the App and supersede all prior agreements and understandings, whether written or oral.
+These Terms, together with the Privacy Policy and any additional notices provided within the App, constitute the entire agreement between you and Remotiq regarding the use of the App and supersede all prior agreements and understandings.
 
 ---
 
 ## 17. Contact Us
 
-If you have any questions about these Terms and Conditions, please contact us at:
+If you have any questions regarding these Terms and Conditions, please contact us:
 
-**Email:** support@remotenow.app  
-**Website:** [https://github.com/your-org/remotenow](https://github.com/your-org/remotenow)
+**Email:** [support@remotiq.app](mailto:support@remotiq.app)
+
+**Website:** https://remotiq.app
 
 ---
 
-*RemoteNow — Smart TV Remote Controller*
+**Remotiq — Smart TV Remote Controller**

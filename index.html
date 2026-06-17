@@ -1,526 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy — Remotiq</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
-  <style>
-    :root {
-      --bg: #0d0f12;
-      --surface: #13161b;
-      --border: #1e2229;
-      --accent: #3ecfcf;
-      --accent-dim: rgba(62,207,207,0.12);
-      --text: #e2e6ec;
-      --muted: #636b78;
-      --heading: #ffffff;
-      --tag-bg: #1a1f27;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 300;
-      font-size: 15px;
-      line-height: 1.8;
-      min-height: 100vh;
-    }
-
-    /* ─── Noise overlay ─────────────────────────────── */
-    body::before {
-      content: '';
-      position: fixed; inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    /* ─── Top accent bar ────────────────────────────── */
-    .top-bar {
-      height: 3px;
-      background: linear-gradient(90deg, transparent, var(--accent), transparent);
-    }
-
-    /* ─── Header ─────────────────────────────────────── */
-    header {
-      position: relative;
-      padding: 64px 0 48px;
-      text-align: center;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .logo-mark {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 28px;
-    }
-
-    .logo-icon {
-      width: 38px; height: 38px;
-      border: 1.5px solid var(--accent);
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      color: var(--accent);
-      font-size: 18px;
-    }
-
-    .logo-name {
-      font-family: 'DM Mono', monospace;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      color: var(--heading);
-      font-weight: 400;
-      letter-spacing: -0.02em;
-      line-height: 1.15;
-    }
-
-    .subtitle {
-      margin-top: 14px;
-      color: var(--muted);
-      font-size: 13px;
-      font-family: 'DM Mono', monospace;
-      letter-spacing: 0.05em;
-    }
-
-    /* ─── Layout ─────────────────────────────────────── */
-    .wrapper {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 0 24px;
-      position: relative; z-index: 1;
-    }
-
-    /* ─── TOC ─────────────────────────────────────────── */
-    .toc {
-      margin: 48px 0 56px;
-      padding: 28px 32px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-    }
-
-    .toc-label {
-      font-family: 'DM Mono', monospace;
-      font-size: 10px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 16px;
-    }
-
-    .toc ol {
-      list-style: none;
-      counter-reset: toc;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 6px 32px;
-    }
-
-    @media (max-width: 540px) { .toc ol { grid-template-columns: 1fr; } }
-
-    .toc li { counter-increment: toc; }
-
-    .toc a {
-      color: var(--text);
-      text-decoration: none;
-      font-size: 13.5px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: color 0.2s;
-    }
-
-    .toc a::before {
-      content: counter(toc, decimal-leading-zero);
-      font-family: 'DM Mono', monospace;
-      font-size: 11px;
-      color: var(--muted);
-      min-width: 22px;
-    }
-
-    .toc a:hover { color: var(--accent); }
-
-    /* ─── Sections ───────────────────────────────────── */
-    section {
-      margin-bottom: 64px;
-      scroll-margin-top: 32px;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 24px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .section-num {
-      font-family: 'DM Mono', monospace;
-      font-size: 11px;
-      color: var(--accent);
-      background: var(--accent-dim);
-      padding: 3px 8px;
-      border-radius: 4px;
-      letter-spacing: 0.05em;
-    }
-
-    h2 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.5rem;
-      color: var(--heading);
-      font-weight: 400;
-      letter-spacing: -0.01em;
-    }
-
-    h3 {
-      font-size: 12px;
-      font-family: 'DM Mono', monospace;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin: 28px 0 12px;
-    }
-
-    p { margin-bottom: 14px; color: var(--text); }
-
-    /* ─── Tables ─────────────────────────────────────── */
-    .table-wrap { overflow-x: auto; margin: 16px 0 24px; border-radius: 10px; border: 1px solid var(--border); }
-
-    table { width: 100%; border-collapse: collapse; }
-
-    thead tr { background: var(--surface); }
-
-    th {
-      font-family: 'DM Mono', monospace;
-      font-size: 10px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      padding: 12px 20px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-    }
-
-    td {
-      padding: 13px 20px;
-      font-size: 13.5px;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-    }
-
-    tr:last-child td { border-bottom: none; }
-
-    tbody tr:hover { background: rgba(255,255,255,0.02); }
-
-    td strong {
-      color: var(--heading);
-      font-weight: 500;
-    }
-
-    td a { color: var(--accent); text-decoration: none; }
-    td a:hover { text-decoration: underline; }
-
-    /* ─── Callout / highlight boxes ──────────────────── */
-    .callout {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--accent);
-      border-radius: 8px;
-      padding: 18px 22px;
-      margin: 18px 0;
-      font-size: 14px;
-    }
-
-    .callout.warn {
-      border-left-color: #f0a050;
-      background: rgba(240,160,80,0.05);
-    }
-
-    /* ─── Permission tags ─────────────────────────────── */
-    .perm-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 12px 0 20px;
-    }
-
-    .perm-tag {
-      background: var(--tag-bg);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 5px 12px;
-      font-family: 'DM Mono', monospace;
-      font-size: 12px;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .perm-tag .dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-
-    /* ─── Footer ─────────────────────────────────────── */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 40px 0 48px;
-      text-align: center;
-    }
-
-    .footer-brand {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.1rem;
-      color: var(--heading);
-      margin-bottom: 6px;
-    }
-
-    .footer-sub {
-      font-size: 12px;
-      color: var(--muted);
-      font-family: 'DM Mono', monospace;
-      margin-bottom: 20px;
-    }
-
-    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
-
-    .footer-links a {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 13px;
-      transition: color 0.2s;
-    }
-
-    .footer-links a:hover { color: var(--accent); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remotiq Privacy Policy</title>
 </head>
 <body>
 
-<div class="top-bar"></div>
+<h1>Privacy Policy</h1>
 
-<div class="wrapper">
-  <header>
-    <div class="logo-mark">
-      <div class="logo-icon">⟳</div>
-      <span class="logo-name">Remotiq</span>
-    </div>
-    <h1>Privacy Policy</h1>
-    <p class="subtitle">Last Updated: May 16, 2026</p>
-  </header>
+<p><strong>Last Updated:</strong> June 2026</p>
 
-  <!-- TOC -->
-  <nav class="toc" aria-label="Table of contents">
-    <p class="toc-label">Contents</p>
-    <ol>
-      <li><a href="#s1">Information We Collect</a></li>
-      <li><a href="#s2">How We Use Your Information</a></li>
-      <li><a href="#s3">Data Storage</a></li>
-      <li><a href="#s4">Third-Party Services</a></li>
-      <li><a href="#s5">Permissions</a></li>
-      <li><a href="#s6">Children's Privacy</a></li>
-      <li><a href="#s7">Data Security</a></li>
-      <li><a href="#s8">Your Rights</a></li>
-      <li><a href="#s9">Policy Changes</a></li>
-      <li><a href="#s10">Contact Us</a></li>
-    </ol>
-  </nav>
+<p>
+Remotiq ("we", "our", or "us") respects your privacy and is committed to protecting it.
+This Privacy Policy explains what information is collected when you use the Remotiq mobile application,
+how that information is used, and the choices available to you.
+</p>
 
-  <p>Thank you for using <strong>Remotiq</strong> ("the App", "we", "us", or "our"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. Please read this policy carefully. If you do not agree with its terms, please stop using the App immediately.</p>
+<h2>Information We Collect</h2>
 
-  <!-- 1 -->
-  <section id="s1">
-    <div class="section-header">
-      <span class="section-num">01</span>
-      <h2>Information We Collect</h2>
-    </div>
+<p>
+Remotiq is designed to function without requiring users to create an account or provide personal information.
+</p>
 
-    <h3>1.1 Information You Provide</h3>
-    <p>We do not require you to create an account or provide personal information to use Remotiq. The App operates primarily as a local network tool.</p>
+<p>
+We do not collect:
+</p>
 
-    <h3>1.2 Automatically Collected Information</h3>
-    <p><strong style="color:var(--heading)">Local Network & Device Data</strong></p>
-    <p>Your device scans your local Wi-Fi network to discover compatible Smart TVs and streaming devices (e.g., Samsung, LG, Sony, Roku, Amazon Fire TV, Apple TV, Philips, Hisense, Panasonic). IP addresses and device names of TVs on your local network are used solely to establish a connection and are <strong>never transmitted to our servers</strong>. Connection preferences (e.g., last connected device) are stored locally on your device.</p>
+<ul>
+    <li>Name</li>
+    <li>Email address</li>
+    <li>Phone number</li>
+    <li>Physical address</li>
+    <li>Payment information</li>
+    <li>Contacts</li>
+    <li>Photos or videos</li>
+    <li>Audio recordings</li>
+    <li>Browsing history</li>
+    <li>Search history</li>
+</ul>
 
-    <p><strong style="color:var(--heading)">Usage Analytics</strong></p>
-    <p>We use <strong>Firebase Analytics</strong> to collect anonymized, aggregated usage data such as app sessions, feature interactions, and crash reports. This data cannot be used to identify you personally. This helps us improve app stability and user experience.</p>
+<h2>Diagnostic and Performance Data</h2>
 
-    <p><strong style="color:var(--heading)">Device Information</strong></p>
-    <p>We may collect basic device information (device model, OS version) for diagnostic and analytics purposes.</p>
+<p>
+To improve app stability, reliability, and performance, Remotiq uses Google Firebase Crashlytics.
+</p>
 
-    <h3>1.3 Media Access</h3>
-    <p>When you use the <strong>Cast</strong> feature, the App accesses photos, videos, and audio files from your device's local storage. This media is streamed directly to your TV over your local Wi-Fi network. Media files are <strong>never uploaded to our servers</strong>.</p>
+<p>
+Crashlytics may collect diagnostic information such as:
+</p>
 
-    <h3>1.4 Microphone</h3>
-    <p>The App requests microphone access solely to enable the <strong>Voice Command</strong> feature, which converts your speech to text to control your TV. Audio is processed on-device using the platform's speech recognition service. We do not store or transmit your voice data.</p>
-  </section>
+<ul>
+    <li>Crash reports</li>
+    <li>Error logs</li>
+    <li>Device model</li>
+    <li>Operating system version</li>
+    <li>Application version</li>
+    <li>Performance and stability metrics</li>
+</ul>
 
-  <!-- 2 -->
-  <section id="s2">
-    <div class="section-header">
-      <span class="section-num">02</span>
-      <h2>How We Use Your Information</h2>
-    </div>
-    <p>We use the information collected for the following purposes:</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Purpose</th><th>Description</th></tr></thead>
-        <tbody>
-          <tr><td><strong>TV Discovery</strong></td><td>Scanning your local network to find compatible Smart TVs</td></tr>
-          <tr><td><strong>Remote Control</strong></td><td>Sending commands to your TV over your local Wi-Fi</td></tr>
-          <tr><td><strong>Media Casting</strong></td><td>Streaming selected media from your device to your TV</td></tr>
-          <tr><td><strong>Voice Commands</strong></td><td>Converting speech to text for TV control</td></tr>
-          <tr><td><strong>App Improvement</strong></td><td>Using anonymized analytics to fix bugs and improve features</td></tr>
-          <tr><td><strong>Preferences</strong></td><td>Remembering your last connected device and in-app settings</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="callout">We do <strong>not</strong> sell, trade, or rent your personal information to third parties.</div>
-  </section>
+<p>
+This information is used solely for:
+</p>
 
-  <!-- 3 -->
-  <section id="s3">
-    <div class="section-header">
-      <span class="section-num">03</span>
-      <h2>Data Storage</h2>
-    </div>
-    <p>All connection preferences and settings are stored <strong>locally on your device</strong> using secure, platform-provided storage (iOS Keychain / Android Secure Storage). We do not maintain any server-side database of user information. Anonymized analytics data is stored by <strong>Google Firebase</strong> in accordance with <a href="https://policies.google.com/privacy" style="color:var(--accent)">Google's Privacy Policy</a>.</p>
-  </section>
+<ul>
+    <li>Diagnosing and fixing crashes</li>
+    <li>Improving app performance</li>
+    <li>Monitoring application stability</li>
+    <li>Enhancing overall user experience</li>
+</ul>
 
-  <!-- 4 -->
-  <section id="s4">
-    <div class="section-header">
-      <span class="section-num">04</span>
-      <h2>Third-Party Services</h2>
-    </div>
-    <p>The App integrates the following third-party services:</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Firebase Analytics (Google)</strong></td><td>Anonymized usage analytics</td><td><a href="https://policies.google.com/privacy">View</a></td></tr>
-          <tr><td><strong>Google Fonts</strong></td><td>Typography rendering</td><td><a href="https://policies.google.com/privacy">View</a></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p>These services may collect device identifiers and usage data in accordance with their own privacy policies. We encourage you to review them.</p>
-  </section>
+<h2>Analytics</h2>
 
-  <!-- 5 -->
-  <section id="s5">
-    <div class="section-header">
-      <span class="section-num">05</span>
-      <h2>Permissions</h2>
-    </div>
-    <p>The App requests the following device permissions:</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Local Network Access</strong></td><td>Discover and communicate with Smart TVs on your Wi-Fi</td></tr>
-          <tr><td><strong>Wi-Fi Information</strong></td><td>Identify the network for TV discovery</td></tr>
-          <tr><td><strong>Microphone</strong></td><td>Voice command input for TV control</td></tr>
-          <tr><td><strong>Photo Library</strong></td><td>Browse and cast photos/videos to your TV</td></tr>
-          <tr><td><strong>Media Files (Android)</strong></td><td>Access local media for casting</td></tr>
-          <tr><td><strong>Notifications</strong></td><td>Optional: display remote control feedback notifications</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="callout warn">You may revoke any of these permissions at any time in your device's Settings. Revoking a permission will disable the corresponding feature.</div>
-  </section>
+<p>
+Remotiq may use limited analytics and diagnostic information to understand app performance and feature usage.
+Any analytics information is used only in aggregated or pseudonymous form to improve the application.
+</p>
 
-  <!-- 6 -->
-  <section id="s6">
-    <div class="section-header">
-      <span class="section-num">06</span>
-      <h2>Children's Privacy</h2>
-    </div>
-    <p>Remotiq is not directed at children under the age of <strong>13</strong> (or the equivalent minimum age in your jurisdiction). We do not knowingly collect personal information from children. If you believe your child has provided us with personal information, please contact us and we will take steps to delete such information.</p>
-  </section>
+<p>
+We do not use analytics data to identify individual users.
+</p>
 
-  <!-- 7 -->
-  <section id="s7">
-    <div class="section-header">
-      <span class="section-num">07</span>
-      <h2>Data Security</h2>
-    </div>
-    <p>We implement industry-standard security measures to protect your information:</p>
-    <div class="perm-grid">
-      <span class="perm-tag"><span class="dot"></span>iOS Keychain Storage</span>
-      <span class="perm-tag"><span class="dot"></span>Android Keystore</span>
-      <span class="perm-tag"><span class="dot"></span>Local Wi-Fi Only</span>
-      <span class="perm-tag"><span class="dot"></span>No Internet Transmission</span>
-    </div>
-    <div class="callout warn">Despite these measures, no method of electronic storage or transmission is 100% secure. We cannot guarantee absolute security.</div>
-  </section>
+<h2>Tracking</h2>
 
-  <!-- 8 -->
-  <section id="s8">
-    <div class="section-header">
-      <span class="section-num">08</span>
-      <h2>Your Rights</h2>
-    </div>
-    <p>Depending on your location, you may have certain rights regarding your data:</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Right</th><th>Details</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Access</strong></td><td>Request information about data collected about you</td></tr>
-          <tr><td><strong>Deletion</strong></td><td>Request deletion of your personal data</td></tr>
-          <tr><td><strong>Opt-Out</strong></td><td>Disable analytics by revoking permissions or uninstalling the App</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p>Since we collect minimal data and do not operate user accounts, most data rights are automatically satisfied. For analytics data held by Firebase, please refer to <a href="https://support.google.com/accounts/answer/3024190" style="color:var(--accent)">Google's data deletion tools</a>.</p>
-  </section>
+<p>
+Remotiq does not track users across third-party apps, websites, or services for advertising purposes.
+</p>
 
-  <!-- 9 -->
-  <section id="s9">
-    <div class="section-header">
-      <span class="section-num">09</span>
-      <h2>Changes to This Privacy Policy</h2>
-    </div>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this page. We encourage you to review this policy periodically.</p>
-  </section>
+<p>
+Remotiq does not sell personal information and does not share user data with data brokers.
+</p>
 
-  <!-- 10 -->
-  <section id="s10">
-    <div class="section-header">
-      <span class="section-num">10</span>
-      <h2>Contact Us</h2>
-    </div>
-    <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
-    <div class="callout">
-      <strong style="color:var(--heading)">Email:</strong> <a href="mailto:support@remotiq.app" style="color:var(--accent)">support@remotiq.app</a><br/>
-    </div>
-  </section>
+<p>
+Data collected through Firebase services is used solely for diagnostics, analytics, app functionality, and product improvement.
+</p>
 
-  <footer>
-    <p class="footer-brand">Remotiq</p>
-    <p class="footer-sub">Smart TV Remote Controller · Privacy Policy · v1.0</p>
-    <div class="footer-links">
-      <a href="mailto:support@remotiq.app">Contact</a>
-      <a href="https://policies.google.com/privacy">Firebase Policy</a>
-    </div>
-  </footer>
-</div>
+<h2>App Tracking Transparency</h2>
+
+<p>
+Because Remotiq does not perform tracking as defined by Apple's App Tracking Transparency (ATT) framework, the app does not request permission to track users across apps or websites owned by other companies.
+</p>
+
+<h2>Local Network Access</h2>
+
+<p>
+Remotiq may request access to devices on your local network to discover and communicate with compatible TVs and streaming devices.
+</p>
+
+<p>
+Local network communication occurs only to enable remote-control functionality and device discovery.
+Information discovered on your local network is not sold or used for advertising purposes.
+</p>
+
+<h2>Third-Party Services</h2>
+
+<p>
+Remotiq may use the following third-party services:
+</p>
+
+<ul>
+    <li>Firebase Crashlytics (crash reporting and diagnostics)</li>
+    <li>Firebase Analytics (application analytics, if enabled)</li>
+</ul>
+
+<p>
+These providers process information according to their own privacy policies.
+</p>
+
+<h2>Data Security</h2>
+
+<p>
+We take reasonable technical and organizational measures to protect information processed by the app against unauthorized access, disclosure, alteration, or destruction.
+</p>
+
+<h2>Children's Privacy</h2>
+
+<p>
+Remotiq is not directed toward children under the age of 13 and does not knowingly collect personal information from children.
+</p>
+
+<h2>Your Rights</h2>
+
+<p>
+Depending on your location, you may have rights regarding access, correction, deletion, or restriction of data processing. You may contact us to exercise any applicable rights.
+</p>
+
+<h2>Changes to This Privacy Policy</h2>
+
+<p>
+We may update this Privacy Policy from time to time. Any updates will be posted on this page with an updated revision date.
+</p>
+
+<h2>Contact Us</h2>
+
+<p>
+If you have any questions about this Privacy Policy, please contact:
+</p>
+
+<p>
+Email: your-support-email@example.com
+</p>
 
 </body>
 </html>
